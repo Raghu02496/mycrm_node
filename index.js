@@ -1,13 +1,13 @@
 import 'dotenv/config';
 import express from 'express'
-import { aiRouter } from './routes.js';
+import { aiRouter } from './routes/ai-routes.js';
 import cors from "cors"
 
 const app = express();
 app.use(
   express.json(),
   cors({
-    origin : 'http://localhost:4200'
+    origin : process.env.ORIGIN
   })
 )
 app.use('/ai', aiRouter)
