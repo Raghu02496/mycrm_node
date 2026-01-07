@@ -10,6 +10,8 @@
   "author": "Raghu02496",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1"
+    "@genkit-ai/googleai": "^1.27.0",
+    "express": "^5.2.1",
+    "genkit": "^1.27.0"
   }
 }
