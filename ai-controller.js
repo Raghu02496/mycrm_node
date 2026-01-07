@@ -2,7 +2,7 @@ import { googleAI } from '@genkit-ai/google-genai';
 import { genkit } from 'genkit';
 
 export async function chatWithAI(req, res){
-    const { message } = request.body
+    const { message } = req.body
     try {
         const ai = genkit({
         plugins: [googleAI()],
@@ -13,6 +13,7 @@ export async function chatWithAI(req, res){
     });
 
     const res = await ai.generate(message)
+    console.log(res)
     } catch (error) {
         
     }
