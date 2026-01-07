@@ -13,7 +13,7 @@ export async function chatWithAI(req, res){
     });
 
     const res = await ai.generate(message)
-    console.log(res)
+    console.log(res.text)
     } catch (error) {
         
     }
