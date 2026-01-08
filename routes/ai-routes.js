@@ -1,6 +1,8 @@
-import express from 'express'
+import{ Router } from 'express'
 import { chatWithAI } from '../controllers/ai-controllers.js'
 
-export const aiRouter = express.Router()
+const aiRouter = Router()
 
 aiRouter.post('/chat', chatWithAI)
+
+export default aiRouter
