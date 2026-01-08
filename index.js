@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import express from 'express'
 import aiRouter from './routes/ai-routes.js';
 import cors from "cors"
